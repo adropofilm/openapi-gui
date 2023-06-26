@@ -1,7 +1,7 @@
 <div class='component-gui'>
 	<div class='navbar is-fixed-top has-shadow success' id='topnav'>
 		<div class="navbar-brand">
-			<span class='navbar-item'><a href="https://github.com/mermade/openapi-gui">OpenAPI-GUI v3</a></span>
+			<span class='navbar-item'>RizzPI</span>
 			<button class="button navbar-burger">
 				<span>Mobile menu A</span>
 				<span>Mobile menu B</span>
@@ -14,11 +14,6 @@
 				<span class="btn" data-balloon="Coming soon!" data-balloon-pos="down" v-on:click="settings()"><i class='fa fa-white fa-cog'></i> Settings</span>
 				<a class="btn" v-on:click="save()"><i class='fa fa-white fa-save'></i> Save</a>
 				<a class="btn" v-on:click="undo()"><i class='fa fa-white fa-undo'></i> Undo</a>
-				<a class="btn" target="_blank" href="https://twitter.com/share?source=tweetbutton&text=OpenAPI-GUI%20Visual%20editor%20for%20%23OpenAPI%203.0.x%20Via%20%40PermittedSoc&url=https%3A%2F%2Fgithub.com%2FMermade%2Fopenapi-gui"><i
-					 class='fa fa-white fa-twitter'></i></a>
-				<a class="btn" target="_blank" href="https://twitter.com/intent/follow?screen_name=PermittedSoc"><i class='fa fa-twitter'></i>
-					Follow</a>
-				<a class='btn' target="_blank" href="https://github.com/mermade/openapi-gui"><i class='fa fa-github'></i> GitHub</a>
 			</div>
 		</div>
 	</div>
@@ -76,9 +71,9 @@
 			<a id='scrollTop'></a>
 			<ul id="section-tabs" class='tabs is-boxed tab-container'>
 				<li class="tabItem" id="tabItem-about">
-					<a class="tabSelect" href="#about" v-on:click="selectTab('about',$event)">
+					<a class="tabSelect" href="#start-here" v-on:click="selectTab('about',$event)">
 						<span class="icon is-small"><i class="fa fa-info"></i></span>
-						<span>About</span>
+						<span>Start Here</span>
 					</a>
 				</li>
 				<li class="tabItem" id="tabItem-input" v-on:click="selectTab('input',$event)">
@@ -123,22 +118,10 @@
 						<span>Schemas</span>
 					</a>
 				</li>
-				<li class="tabItem" id="tabItem-wizards">
-					<a class="tabSelect" href='#wizards' id="wizards-tab" v-on:click="selectTab('wizards',$event)">
-						<span class="icon is-small"><i class='fa fa-magic'></i></span>
-						<span>Wizards</span>
-					</a>
-				</li>
 				<li class="tabItem" id="tabItem-output">
 					<a class="tabSelect" href='#output' id="output-tab" v-on:click="renderOutput($event)">
 						<span class="icon is-small"><i class='fa fa-file'></i></span>
 						<span>Export JSON</span>
-					</a>
-				</li>
-				<li class="tabItem" id="tabItem-yaml">
-					<a class="tabSelect" href='#yaml' id="yaml-tab" v-on:click="renderOutputYaml($event)">
-						<span class="icon is-small"><i class='fa fa-file'></i></span>
-						<span>Export YAML</span>
 					</a>
 				</li>
 			</ul>
